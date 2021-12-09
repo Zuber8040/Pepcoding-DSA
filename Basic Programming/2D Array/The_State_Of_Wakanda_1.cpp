@@ -16,7 +16,8 @@ for(int j=0;j<m;j++){
         for(int i=0;i<n;i++){
             cout<<arr[i][j]<<endl;
         }
-    }else{
+    }
+    else{
         for(int i=n-1;i>=0;i--){
             cout<<arr[i][j]<<endl;
         }
