@@ -9,9 +9,9 @@ void pzz(int n){
     }
     cout<<n<<" ";
     pzz(n-1);
-    
     cout<<n<<" ";
     pzz(n-1);
+    cout<<n<<" ";
 
 }
 
