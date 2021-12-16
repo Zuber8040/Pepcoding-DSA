@@ -3,12 +3,11 @@ using namespace std;
 
 void display(int arr[], int idx, int n){
     // write your code here
-       if(n==0){
-           return;
-       }
-       cout<<arr[idx]<<endl;
-       display(arr,idx+1,n-1);
-       
+    if(n==0){
+        return;
+    }
+    cout<<arr[n-1]<<endl;
+    display(arr,idx++,n-1);
 }
 
 int main(){
