@@ -3,9 +3,41 @@
 #include<vector>
 using namespace std;
 
+vector<string>keypad={
+    ".;",
+    "abc",
+    "def",
+    "ghi",
+    "jkl",
+    "mno",
+    "pqrs",
+    "tu",
+    "vwx",
+    "yz"
+};
+
+
 vector<string> getKPC(string s){
-    //Write your code here
-    
+
+
+    if(s.size()==0){
+        vector<string>basecase;
+        basecase.push_back("");
+        return basecase;
+    }
+
+    char ch = s[0];
+    string ros = s.substr(1);
+    vector<string>res = getKPC(ros);
+    vector<string>myres;
+    int idx = ch-'0';
+    for(int i=0;i<keypad[idx].size();i++){
+        char ch2 = keypad[idx].at(i);       
+        for(string str :res){
+            myres.push_back(ch2+str);
+        }
+    }
+    return myres;
 }
 
 
