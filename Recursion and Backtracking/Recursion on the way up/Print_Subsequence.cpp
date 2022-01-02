@@ -1,7 +1,13 @@
 #include <iostream>
 using namespace std;
+
+void printSS(string ques, string ans){
+    // write your code here
+    
+}
+
 int main(){
-
-
-return 0;
+    string str;
+    cin >> str;
+    printSS(str, "");
 }
