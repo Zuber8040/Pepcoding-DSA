@@ -3,7 +3,7 @@ using namespace std;
 
 void printSS(string ques, string ans){
     // write your code here
-    
+        
 }
 
 int main(){
