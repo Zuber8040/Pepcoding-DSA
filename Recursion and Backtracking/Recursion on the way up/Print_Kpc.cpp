@@ -5,7 +5,6 @@ using namespace std;
 string codes[] = {".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
 void printKPC(string ques, string asf){
-
     if(ques.length()==0){
         cout<<asf<<"\n";
         return ;
